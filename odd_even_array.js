@@ -1,28 +1,25 @@
-function alg(num) {
+function generateArrays(num) {
   let arrayme = [];
   let even = [];
   let odd = [];
   
-  if(num === 0) return false;
+  if(num === 0 || !arguments || !Number(num)) return false;
   
-  let u = 1; 
     
-  for(; u <= num; u++) {
+  for (let u = 1; u <= num; u++) {
     arrayme.push(u);
   }
+ 
+  for(let v = 1; v < arrayme.length; v++) {
 
-  let v= 1;
-  
-  for(; v < arrayme.length; v++) {
     if(arrayme[v] % 2 === 0) {
       even.push(arrayme[v]);
     }else {
       odd.push(arrayme[v]);
       }
     }  
-    console.log("Generated array: " +arrayme);
-    console.log("Even numbers " + even);
-    console.log("Odd numbers " + odd);
+  console.log("Generated array: " +arrayme +" \n\nEven numbers: "  + even + "\n\nOdd numbers: " + odd);
+
 }
 
-alg(15);
+generateArrays(30);
