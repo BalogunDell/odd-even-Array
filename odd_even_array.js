@@ -21,5 +21,3 @@ function generateArrays(num) {
   console.log("Generated array: " +arrayme +" \n\nEven numbers: "  + even + "\n\nOdd numbers: " + odd);
 
 }
-
-generateArrays(30);
