@@ -1,5 +1,5 @@
 function generateArrays(num) {
-  let arrayme = [];
+  let generated_array = [];
   let even = [];
   let odd = [];
   
@@ -7,17 +7,17 @@ function generateArrays(num) {
   
     
   for (let u = 1; u <= num; u++) {
-    arrayme.push(u);
+    generated_array.push(u);
   }
  
-  for(let v = 1; v < arrayme.length; v++) {
+  for(let v = 1; v < generated_array.length; v++) {
 
-    if(arrayme[v] % 2 === 0) {
-      even.push(arrayme[v]);
+    if(generated_array[v] % 2 === 0) {
+      even.push(generated_array[v]);
     }else {
-      odd.push(arrayme[v]);
+      odd.push(generated_array[v]);
       }
     }  
-  console.log("Generated array: " +arrayme +" \n\nEven numbers: "  + even + "\n\nOdd numbers: " + odd);
+  console.log("Generated array: " + generated_array +" \n\nEven numbers: "  + even + "\n\nOdd numbers: " + odd);
 
 }
