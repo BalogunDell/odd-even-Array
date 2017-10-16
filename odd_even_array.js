@@ -13,9 +13,6 @@ function generateArrays(num) {
     
     }  
     
-  console.log("Generated array: " + 
-  generated_array +" \n\nEven numbers: "  + 
-  even + "\n\nOdd numbers: " + 
-  odd);
+  console.log("Generated array: " + generated_array +" \n\nEven numbers: "  + even + "\n\nOdd numbers: " + odd);
   
 }
