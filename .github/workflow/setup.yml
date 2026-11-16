@@ -1,0 +1,8 @@
+name: workflow
+on: push
+jobs: 
+  first_job: 
+    runs_on: unbuntu-latest
+    steps: 
+      - name: Welcome Message
+        run: echo "This is my first message" 
