@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout repository
-        run: actions/checkout@v7.0.1
+        run: actions/checkout@v7
       - name: Welcome Message
         run: echo "This is my first message" 
       - name: list files
