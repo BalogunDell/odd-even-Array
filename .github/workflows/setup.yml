@@ -19,10 +19,13 @@ jobs:
         uses: actions/upload-artifact@v7
         with: 
             name: generated-number-file
+            path: random.txt
 
       - name: Download the uploaded Artifact
         uses: actions/download-artifact@v8
         with: 
             name: generated-number-file
+            path: random.txt
+            
       - name: List files
         run: ls -la
