@@ -25,7 +25,7 @@ jobs:
         uses: actions/download-artifact@v8
         with: 
             name: generated-number-file
-            path: random.txt
+            #path: random.txt
             
       - name: List files
         run: ls -la
