@@ -1,12 +1,27 @@
-name: workflow
+name: Generate random number
 on: push
 jobs: 
   first_job: 
     runs-on: ubuntu-latest
+
     steps: 
       - name: Checkout Repository
         uses: actions/checkout@v7
-      - name: Welcome Message
-        run: echo "This is my first message" 
-      - name: list files
-        run: ls -la
+      - name: Sleep for 3 Seconds
+        run: sleep 3
+      - name: Get random number
+        run: 
+          |
+          chmod +x
+          echo ./random.sh > random.txt
+      - name: Upload file 
+        uses: actions/upload-artifacts@v7
+        with: 
+            name: generated number
+            path: ./random.txt
+      - name: Download the uploaded Artifact
+        uses: actions/download-artifact@v8
+        with: 
+            name: generated number
+            path: ./random.txt
+        run: ls -la ./
