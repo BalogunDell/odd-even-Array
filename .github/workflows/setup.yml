@@ -24,4 +24,5 @@ jobs:
         with: 
             name: generated number
             path: ./random.txt
-        run: ls -la ./
+      - name: List files
+          run: ls -la ./
