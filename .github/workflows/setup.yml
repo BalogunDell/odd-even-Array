@@ -13,7 +13,7 @@ jobs:
         run: 
           |
           chmod +x random.sh
-          echo ./random.sh >> random.txt
+          ./random.sh >> random.txt
 
       - name: Upload file 
         uses: actions/upload-artifact@v7
