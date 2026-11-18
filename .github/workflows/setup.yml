@@ -27,8 +27,8 @@ jobs:
       - name: Download the uploaded Artifact
         uses: actions/download-artifact@v8
         with: 
-            #name: generated-number-file
-            path: ./random.txt
+            name: generated-number-file
+            path: ./
             
       - name: Read files
         run: cat ./random.txt
